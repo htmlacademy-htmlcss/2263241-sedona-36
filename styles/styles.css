@@ -14,23 +14,48 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+  margin: 0;
 }
 
-/*.navigation-list,
+.wrapper {
+  background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-list,
 .navigation-user-list,
 .advantages-list,
 .services-list,
 .social-list,
 .breadcrumbs,
-.catalog-filter-list{
+.catalog-filter-list,
+.hotel-list,
+.pagination-list {
   list-style-type: none;
-}*/
+  padding: 0;
+  margin: 0;
+}
 
 .navigation-link {
   font-family: "PT Sans", sans-serif;
@@ -74,34 +99,26 @@ body {
 
 .hero-intro {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #bfd3d5;
   background-image: url("../images/background-index.jpg");
   background-repeat: no-repeat;
   background-size: 1200px 485px;
-  /*background-position: 50%;*/
 }
 
 .block-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
-  /* color: #000000;
-  background-color: #ffffff;*/
-  /* наследуется из body, но в видео по барбершопу сказали,
-  что надо прописать. Вопрос: надо прописывать дополнительно или нет,*/
   text-transform: uppercase;
 }
 
 .block-description {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
-  /* background-color: #ffffff;*/
 }
 
 .list-blue {
@@ -117,29 +134,23 @@ body {
 }
 
 .list-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #000000;
-  /*background-color не прописываю, т.к прописано выше для разных классов. Так правильно?*/
   text-transform: uppercase;
 }
 
 .list-description {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   text-align: center;
   color: #333333;
-  /* background-color не прописываю, т.к прописано выше для разных классов . Так правильно?*/
   text-transform: none;
 }
 
 .list-blue h3,
 .list-blue p {
   color: #ffffff;
-  background-color: #82B3D3;
 }
 
 .services-house {
@@ -177,6 +188,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .button-catalog {
@@ -197,7 +210,7 @@ body {
 
 .subscribe-index {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #bfd3d5;
   background-image: url("../images/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -230,18 +243,9 @@ body {
   background-color: #f2f2f2;
 }
 
-.subscribe-index {
-  color: #ffffff;
-  background-color: #000000;
-  background-image: url("../images/background-subscribe.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left top;
-}
-
 .filtr {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #bfd3d5;
   background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -254,7 +258,6 @@ body {
   line-height: 78px;
   text-align: left;
   color: #ffffff;
-  /*background-color: #000000;*/
   text-transform: capitalize;
 }
 
@@ -294,7 +297,6 @@ body {
 }
 
 .sort-result {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -330,4 +332,73 @@ body {
 .hotel-rating {
   font-size: 16px;
   line-height: 20px;
+}
+
+.button-social {
+  padding-right: 44px;
+  padding-bottom: 47px;
+  background-repeat: no-repeat;
+}
+
+.button-social-vk {
+  background-image: url(../images/icons/social-vk.svg);
+}
+
+.button-social-telegram {
+  background-image: url(../images/icons/social-telegram.svg);
+
+}
+
+.button-social-youtube {
+  background-image: url(../images/icons/social-youtube.svg);
+
+}
+
+.button-view{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-size: 16px 14px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #000000;
+  border-radius: 5px;
+  background-position: center;
+}
+.view-table {
+  background-image: url(../images/icons/view-table.svg);
+}
+.view-card {
+  background-image: url(../images/icons/view-card.svg);
+}
+.view-list {
+  background-image: url(../images/icons/view-list.svg);
+}
+
+.hotel-stars {
+  height: 18px;
+  background-image: url(../images/icons/star.svg);
+  background-repeat: space;
+}
+
+.stars-1 {
+  width: 20px;
+}
+
+.stars-2 {
+  width: 39px;
+}
+
+.stars-3 {
+  width: 61px;
+}
+
+.stars-4 {
+  width: 83px;
+}
+
+.stars-5 {
+  width: 106px;
 }
