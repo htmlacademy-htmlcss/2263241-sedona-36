@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 892px;
-  align-items: center;
+  align-items: flex-start;
 
 }
 
@@ -120,6 +120,7 @@ body {
   width: 268px;
   justify-content: start;
   align-items: center;
+  margin-top: 10px;
 }
 
 .navigation-user-link {
@@ -156,9 +157,10 @@ body {
 }
 
 .button-want {
-  padding-left: 34px;
-  padding-right: 34px;
-  margin-left: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 112px;
+
 }
 
 .navigation-search {
@@ -195,12 +197,14 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #7DB54F;
-  padding: 4px;
+  padding: 5px;
   border-radius: 50%;
   margin: 0;
   position: relative;
   left: 8px;
   bottom: 15px;
+  min-width: 8px;
+  display: inline-block;
 
 }
 
@@ -242,13 +246,13 @@ body {
   text-align: center;
 }
 
-.reasons .block-title {
+ .reasons .block-title {
   width: 630px;
   margin-bottom: 25px;
 }
 
 .reasons .block-description {
-  width: 690px;
+  width: 651px;
 }
 
 /* advantages */
@@ -259,6 +263,9 @@ body {
 
 .advantages-image {
   vertical-align: bottom;
+  background-color: #82B3D3;
+    object-fit: cover;
+    height: 100%;
 }
 
 .advantages-blue {
@@ -306,7 +313,7 @@ body {
   font-weight: 400;
   text-align: center;
   text-transform: none;
-  margin-top: 0;
+  margin: 0;
 }
 
 /* invite */
@@ -314,7 +321,6 @@ body {
   text-align: center;
   padding-bottom: 64px;
   padding-top: 64px;
-
 }
 
 .invite .block-title {
@@ -359,7 +365,7 @@ body {
   background-size: 75px 72px;
   width: 230px;
   padding-top: 183px;
-  padding-bottom: 81px;
+  padding-bottom: 85px;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -372,7 +378,7 @@ body {
   background-size: 75px 72px;
   width: 230px;
   padding-top: 183px;
-  padding-bottom: 81px;
+  padding-bottom: 85px;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -385,7 +391,7 @@ body {
   background-size: 75px 72px;
   width: 230px;
   padding-top: 183px;
-  padding-bottom: 81px;
+  padding-bottom: 85px;
   padding-left: 85px;
   padding-right: 85px;
 }
@@ -401,6 +407,7 @@ body {
 }
 
 .interest .block-title {
+  width: 592px;
   margin-bottom: 20px;
 }
 
@@ -412,7 +419,7 @@ body {
 /* subscribe */
 .subscribe {
   width: 1200px;
-  height: 215px;
+  min-height: 215px;
   text-align: center;
   margin: 0 auto;
   padding-top: 96px;
@@ -429,6 +436,7 @@ body {
 }
 
 .subscribe .block-title {
+  width: 475px;
   margin-bottom: 20px;
 }
 
@@ -441,10 +449,6 @@ body {
 .subscribe-index .block-description {
   color: #ffffff;
 }
-
-
-
-
 .button-catalog {
   font-size: 20px;
   line-height: 36px;
@@ -702,14 +706,14 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  align-items: baseline;
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 11px 23px;
+  padding: 11px 18px;
   display: inline-block;
+  width: 24px;
 }
 
 .pagination-current {
