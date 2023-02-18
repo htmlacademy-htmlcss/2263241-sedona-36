@@ -86,7 +86,9 @@ body {
   flex-wrap: wrap;
   width: 589px;
 }
-
+.navigation-item{
+  max-width: 120px;
+}
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -224,7 +226,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0 auto;
-   overflow-wrap: anywhere;
+
 
 }
 
@@ -235,7 +237,7 @@ body {
   line-height: 26px;
   color: #333333;
   margin: 0 auto;
-   overflow-wrap: anywhere;
+
 }
 
 /* reasons */
@@ -318,7 +320,7 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 62px;
-   overflow-wrap: anywhere;
+
 
 }
 
@@ -327,7 +329,7 @@ body {
   text-align: center;
   text-transform: none;
   margin: 0;
-   overflow-wrap: anywhere;
+
 }
 
 /* invite */
@@ -364,7 +366,7 @@ body {
   text-align: center;
   margin-top: 0;
   margin-bottom: 30px;
-   overflow-wrap: anywhere;
+
 
 }
 
@@ -374,7 +376,7 @@ body {
   text-transform: none;
   color: #333333;
   margin: 0;
-   overflow-wrap: anywhere;
+
 }
 
 .services-house {
@@ -519,7 +521,7 @@ body {
   text-transform: capitalize;
   margin: 0;
   margin-bottom: 8px;
-   overflow-wrap: anywhere;
+
 }
 
 .breadcrumbs-list {
@@ -560,7 +562,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: left;
-   overflow-wrap: anywhere;
+
 }
 
 .catalog-filter-list {
@@ -595,7 +597,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: left;
-   overflow-wrap: anywhere;
   width: 288px;
   margin: 0;
   margin-right: 70px;
@@ -688,22 +689,13 @@ body {
 display: grid;
   width: 300px;
   grid-template-columns: 140px 140px;
-  grid-template-rows: auto min-content auto 36px 36px;
+  grid-template-rows: 1fr min-content min-content min-content min-content;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
 }
 
 .hotel-image-link{
-  grid-column: 1/-1;
-}
-.hotel-image{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.hotel-title-link {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-align: left;
@@ -714,8 +706,18 @@ display: grid;
   grid-column: 1/-1;
   font-size: 24px;
   line-height: 28px;
+  grid-column: 1/-1;
+
 }
-.hotel-title{
+ .hotel-image{
+    /* object-fit: cover;
+    height: 100%;
+    width: 100%; */
+    margin-bottom: 16px;
+}
+
+.hotel-title {
+
   margin: 0;
   overflow-wrap: anywhere;
 }
