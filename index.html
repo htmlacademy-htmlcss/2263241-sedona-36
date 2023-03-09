@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Седона. Городок в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -129,23 +130,29 @@
         <section class="services">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
-            <li class="services-item services-house">
-              <h3 class="services-list-title">Жильё</h3>
-              <p class="services-list-description">Рекомендуем пожить в настоящем мотеле,
-                всё как в кино!
-              </p>
+            <li class="services-item">
+              <div class=" services-house">
+                <h3 class="services-list-title">Жильё</h3>
+                <p class="services-list-description">Рекомендуем пожить в&nbsp;настоящем мотеле,<br>
+                  всё как в кино!
+                </p>
+              </div>
             </li>
-            <li class="services-item services-food">
-              <h3 class="services-list-title ">Еда</h3>
-              <p class="services-list-description">Всегда заказывайте
-                топовый фирменный бургер, вы не разочаруетесь!
-              </p>
+            <li class="services-item">
+              <div class="services-food">
+                <h3 class="services-list-title ">Еда</h3>
+                <p class="services-list-description">Всегда заказывайте <br>
+                  топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
             </li>
-            <li class="services-item services-souvenir">
-              <h3 class="services-list-title">Сувениры</h3>
-              <p class="services-list-description">Не только китайского,
-                но и настоящего местного производства!
-              </p>
+            <li class="services-item">
+              <div class="services-souvenir">
+                <h3 class="services-list-title">Сувениры</h3>
+                <p class="services-list-description">Не только китайского,<br>
+                  но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
         </section>
@@ -158,7 +165,7 @@
           <p class="block-description">
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button button-catalog" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <a class="button button-catalog" href="#">Поиск гостиницы в Седоне</a>
 
         </section>
         <!--Секция Рассылка-->
@@ -173,7 +180,7 @@
 
             <label class="visually-hidden" for="subscribe-email">Email</label>
             <input class="field field-email" type="email" name="subscribe-email" id="subscribe-email"
-              placeholder="email@example.com" required>
+              placeholder="Ваш e-mail" required>
 
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
@@ -261,17 +268,16 @@
           </a>
         </section>
       </footer>
-
-      <div class="modal-container modal-container-close" >
+       <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <svg class="close-button-svg" aria-hidden="true" focusable="false" width="15" height="15"
-            viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.4907 1.78279L13.1984 0.490479L7.49072 6.19817L1.78303
               0.490479L0.490723 1.78279L6.19842 7.49048L0.490723 13.1982L1.78303
               14.4905L7.49072 8.78279L13.1984 14.4905L14.4907 13.1982L8.78303
               7.49048L14.4907 1.78279Z" />
-              </svg>
+            </svg>
             <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
@@ -300,7 +306,8 @@
                     </svg>
                     <span class="visually-hidden">Уменьшить на один</span>
                   </button>
-                  <input class="adult-field  field" type="number" id="adult" name="adult" placeholder="0" min="0">
+                  <input class="adult-field  field" type="number" id="adult" name="adult" placeholder="0" min="0"
+                    value="2">
                   <button class="button-count button-count-plus" type="button">
                     <svg class="count-plus-svg" aria-hidden="true" focusable="false" width="14" height="14"
                       viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -310,15 +317,18 @@
                   </button>
                 </div>
                 <span class="children-label-container">
-                <label class="check-label children-label" for="children">Дети:</label>
+                  <label class="check-label children-label" for="children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
-                        </svg>
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="26" height="26"
+                        viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
                     </button>
-                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                      которые будут с вами, возраст которых от 6 до 18 лет.
                       Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
@@ -330,15 +340,16 @@
                     </svg>
                     <span class="visually-hidden">Уменьшить на один</span>
                   </button>
-                <input class="children-field field " type="number" id="children" name="children" placeholder="0" min="0">
-                <button class="button-count button-count-plus" type="button">
-                  <svg class="count-plus-svg" aria-hidden="true" focusable="false" width="14" height="14"
-                    viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
-                  </svg>
-                  <span class="visually-hidden">Увеличить на один</span>
-                </button>
-              </div>
+                  <input class="children-field field " type="number" id="children" name="children" placeholder="0"
+                    min="0" value="2">
+                  <button class="button-count button-count-plus" type="button">
+                    <svg class="count-plus-svg" aria-hidden="true" focusable="false" width="14" height="14"
+                      viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                    <span class="visually-hidden">Увеличить на один</span>
+                  </button>
+                </div>
 
                 <button class="button search-form-button" type="submit">Найти</button>
               </div>
