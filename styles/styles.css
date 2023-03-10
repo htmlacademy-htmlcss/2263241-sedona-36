@@ -1817,6 +1817,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: #f2f2f2;
 }
 
 .button-count:hover .count-minus-svg,
