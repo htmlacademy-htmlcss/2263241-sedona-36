@@ -1276,12 +1276,14 @@ body {
 .hotel-type-of-hotel {
   margin: 0;
   overflow-wrap: anywhere;
+  color: #333333;
 }
 
 .hotel-price {
   margin: 0;
   justify-self: end;
   overflow-wrap: anywhere;
+  color: #333333;
 }
 
 .hotel-rating {
@@ -1803,6 +1805,11 @@ body {
   margin: 0;
 }
 
+.children-field,
+.adult-field {
+  -moz-appearance:textfield;
+}
+
 .button-count {
   position: relative;
   width: 40px;
@@ -1810,6 +1817,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  background-color: #f2f2f2;
 }
 
 .button-count:hover .count-minus-svg,
